@@ -1,0 +1,36 @@
+--------------------------------------------------------------------------
+------------------------MANUEL AIDE D'UTILISATION-------------------------
+--------------------------------------------------------------------------
+
+--------------
+COMPRESSION : |
+--------------
+Exemple ligne de commande :
+  
+    ./huffman -c fichieroriginal.txt info.txt fichiercompresse.txt 
+
+	fichieroriginal.txt  : Fichier texte du texte à compresser
+        info.txt             : Fichier texte contenant informations nécéssaire à la décompression.
+ 	fichiercompresse.txt : Fichier texte  compressé.
+ 
+Entrez la commande :    xxd -b fichiercompresse.txt  
+	Pour afficher le fichier compressé.
+
+---------------      
+DECOMPRESION : |
+--------------
+Exemple ligne de commande :
+
+     ./huffman -d fichiercompresse.txt info.txt nouveaufichier.txt 
+
+	fichiercompresse.txt : Fichier texte  compressé.
+        info.txt             : Fichier texte contenant informations nécéssaire à la décompression(obligatoirement le même généré lors de la compression).
+        nouveaufichier.txt   : Fichier texte décompressé.
+
+--------------
+OBLIGATOIRE : |
+--------------
+ 	
+	- ENTREZ obligatoirement "./huffman" suivi de l'option voulu ("-c" ou "-d") puis 3 fichier.txt corespondant aux explications données au-dessus.
+
+___________________________________________________________________________________________________________________________________________________________________________________
